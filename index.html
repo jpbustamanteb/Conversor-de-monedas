@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Conversor de Monedas</h1>
+        </header>
+        <main>
+        
+            <label for="moneda">Moneda de origen:</label>
+            <select id="moneda">
+                <option value="COP">COP (Peso Colombiano)</option>
+                <option value="USD">USD (Dólar estadounidense)</option>
+                <option value="EUR">EUR (Euro)</option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" id="cantidad" placeholder="Ingrese la cantidad">
+
+            <div class="error" id="error"></div>
+
+            <button id="convertir_btn">Convertir</button>
+
+            <div class="resultado">
+                <label for="usd">USD:</label>
+                <input id="usd" readonly>
+
+                <label for="cop">COP:</label>
+                <input id="cop" readonly>
+
+                <label for="eur">EUR:</label>
+                <input id="eur" readonly>
+            </div>
+        </div>
+        
+
+        <script src="./js/script.js"></script>
+
+    </main>
+</body>
+</html>
