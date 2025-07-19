@@ -43,7 +43,7 @@ document.getElementById("convertir_btn").addEventListener("click", () => {
     usdInput.value = (cantidad * (conversion["USD"])).toFixed(2);
     eurInput.value = (cantidad * (conversion["EUR"])).toFixed(2);
     copInput.value = (cantidad * (conversion["COP"])).toFixed(2);
-S
+
     // Mostrar por consola
     console.log("USD:", usdInput.value);
     console.log("EUR:", eurInput.value);
